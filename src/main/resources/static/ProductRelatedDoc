@@ -1,0 +1,47 @@
+{
+        "id": 252,
+        "title": "Apartment1",
+        "description": "Nice property",
+        "ownerName": null,
+        "ownerEmail": "chidanandaswamy356@gmail.com",
+        "price": null,
+        "address": null
+    }
+
+    URLs=
+     i. GetMapping localhost:8080/api/v1/getAll-propertyList
+    ii. PostMapping localhost:8080/api/v1/AddingNewProperties
+   iii.putMapping localhost:8080/api/v1/UpdateProperty/354
+    iv. PatchMapping localhost:8080/api/v1/properties/update-description/452
+     v. patchMapping localhost:8080/api/v1/properties/update-price/452
+    vi. postMapping localhost:8080/api/v1/user/login
+    vii. getMapping http://localhost:8080/api/v1/getAll-propertyList/user/{userId}
+
+
+    User:
+    {
+        "ownerName": "swamy",
+        "ownerEmail": "swamy@gmail.com",
+        "phone": "9663361669",
+        "password":"Swamy@123$"
+        }
+
+   Login
+   { "ownerEmail": "swamy@gmail.com",
+    "password":"swamy*#123"
+   }
+
+   patch for description
+
+   {
+         "description": "best home for family"
+       }
+
+ http://localhost:8080/actuator
+ http://localhost:8080/actuator/health
+
+ for *-> one relationship, default is FetchType.EAGER -> while getting parent data get child entity data
+ for *-> many relationship, default is FetchType.LAZY -> while getting parent data it will not get child entity data
+
+ http://localhost:8080/h2-console/login.jsp
+ http://localhost:8080/swagger-ui/index.html
